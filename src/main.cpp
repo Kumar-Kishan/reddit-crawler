@@ -3,38 +3,14 @@
 #include<fstream>
 using namespace reddit;
 
-
 void clearScreen(){
     std::cout << "\033c";
-}
-
-bool checkSelection(){
-    char c;
-    std::cin >> c;
-    return c == 'Y' || c == 'y';
-}
-//I don't want to write a lot of these..
-//Please don't  say i am making python
-std::string getInputString(std::string prompt=""){
-    std::cout << prompt;
-    std::string temp;
-    std::cin >> temp;
-    return temp;
 }
 
 template<class T>
 T getValuefromJson(json j,std::string key, T defaultValue){
     return j.find(key) == j.end() ? defaultValue : (T)j[key];
 }
-
-
-int getInputInt(std::string  prompt=""){
-    std::cout << prompt;
-    int temp;
-    std::cin >> temp;
-    return temp;
-}
-
 
 int main(){
     using namespace std::string_literals;
