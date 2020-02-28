@@ -54,8 +54,3 @@ space.json
         ],
         "subreddit": "space"
     }
-
-
-
-
-*Please note that this codebase is made in 3-4 hours of work. So, it doesn't contain much good code.*
